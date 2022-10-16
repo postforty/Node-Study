@@ -21,3 +21,11 @@
 > - process.on("exit",)
 > - process.on("beforeExit",)
 > - process.exit()
+
+## 06. path
+
+> - \_\_filename
+> - \_\_dirname
+> - path.basename()
+> - path.extname()
+> - path.parse()
