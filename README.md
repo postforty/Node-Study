@@ -29,3 +29,9 @@
 > - path.basename()
 > - path.extname()
 > - path.parse()
+
+## 07. URL
+
+## 08. crypto
+
+> - salting 암호화
