@@ -15,3 +15,9 @@
 > - setTimeout()
 > - setInterval()
 > - setImmediate()
+
+## 05. process
+
+> - process.on("exit",)
+> - process.on("beforeExit",)
+> - process.exit()

@@ -30,7 +30,7 @@ const obj = {
 };
 console.dir(obj, { depth: 1, colors: true });
 
-// 실행 시간 출력
+// 코드 실행 시간 출력
 console.time("func 1");
 for (let i = 0; i < 999999; i++) {}
 console.timeEnd("func 1");
