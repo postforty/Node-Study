@@ -42,3 +42,18 @@
 > - fs.readFileSync()
 > - fs.writeFile()
 > - fs.writeFileSync()
+
+## 10. express
+
+> - app.use()
+> - express.json()
+> - app.listen()
+> - app.get()
+> - app.post()
+
+## 11. express, MySQL
+
+> - app.get
+> - app.post
+> - index.js
+> - sql.js

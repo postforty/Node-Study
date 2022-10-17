@@ -16,6 +16,7 @@ const createSalt = () => {
     });
   });
 };
+// 암호 생성
 const createCryptoPassword = async (plainPassword) => {
   const salt = createSalt();
   // 암호화할 문자열, salt, 반복횟수, 출력할 바이트수, 해시 알고리즘
@@ -26,3 +27,17 @@ const createCryptoPassword = async (plainPassword) => {
     });
   });
 };
+// 암호 확인
+const getCryptoPassword = async (plainPassword, salt) => {
+  // 암호화할 문자열, salt, 반복횟수, 출력할 바이트수, 해시 알고리즘
+  return new Promise((resolve, reject) => {
+    crypto.pbkdf2(plainPassword, salt, 100000, 64, "sha512", (err, key) => {
+      if (err) reject(err);
+      resolve({ password: key.toString("base64"), salt });
+    });
+  });
+};
+
+// "사용자 아이디, 암호화된 비밀번호, salt"가 필요함
+// 사용자 아이디, 비밀번호
+// -> salt
