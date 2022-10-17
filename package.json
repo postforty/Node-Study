@@ -1,0 +1,22 @@
+{
+  "name": "node-study",
+  "version": "1.0.0",
+  "description": "> - console.error()\r > - console.table()\r > - console.dir()\r > - console.time()\r > - console.timeEnd()",
+  "main": "10_app.js",
+  "scripts": {
+    "test": "node 10_app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/postforty/Node-Study.git"
+  },
+  "author": "Dandy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/postforty/Node-Study/issues"
+  },
+  "homepage": "https://github.com/postforty/Node-Study#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
