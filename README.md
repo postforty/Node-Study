@@ -35,3 +35,10 @@
 ## 08. crypto
 
 > - salting 암호화
+
+## 09. fs
+
+> - fs.readFile()
+> - fs.readFileSync()
+> - fs.writeFile()
+> - fs.writeFileSync()
