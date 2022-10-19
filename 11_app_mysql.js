@@ -22,6 +22,12 @@ app.get("/api/product/category", async (req, res) => {
   res.send(categoryList);
 });
 
+app.get("/api/product/category: product_category_id", async (req, res) => {
+  const { product_category_id } = req.params;
+  const categoryList = await mysql.query("categoryDetail", product_category_id);
+  res.send(categoryList);
+});
+
 app.post("/api/product/category", async (req, res) => {
   const result = await mysql.query("categoryInsert", req.body.param);
   res.send(result);
