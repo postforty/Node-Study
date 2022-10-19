@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
-require("dotenv").config({ path: "mysql/.env" }); // 반드시 mysql 위에 위치해야 함
+console.log(app.get("env"));
+
+require("dotenv").config({ path: `mysql/.env.${app.get("env")}` }); // 반드시 mysql 위에 위치해야 함
+// console.log(process.env);
 const mysql = require("./mysql");
 
 // post를 받기 위해 필요한 코드

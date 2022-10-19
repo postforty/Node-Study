@@ -4,7 +4,8 @@
   "description": "> - console.error()\r > - console.table()\r > - console.dir()\r > - console.time()\r > - console.timeEnd()",
   "main": "11_app_mysql.js",
   "scripts": {
-    "test": "node 10_app.js"
+    "test": "cross-env NODE_ENV=test node 11_app_mysql.js",
+    "prod": "cross-env NODE_ENV=prod node 11_app_mysql.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
