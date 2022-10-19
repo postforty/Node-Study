@@ -57,3 +57,9 @@
 > - app.post
 > - index.js
 > - sql.js
+> - .env
+> - corss-env
+
+## 12. express, route
+
+> - RegExp
