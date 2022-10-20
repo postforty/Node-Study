@@ -65,3 +65,5 @@
 > - RegExp
 
 ## 13. express, route-moudle
+
+## 14. express, route-alias
