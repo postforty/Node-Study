@@ -67,3 +67,5 @@
 ## 13. express, route-moudle
 
 ## 14. express, route-alias
+
+## 15. express.static
