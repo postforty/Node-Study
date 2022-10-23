@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 
+// 이미지 등 정적 파일 서버
 // app.use(express.static("public"));
 app.use("/static", express.static("public"));
 
