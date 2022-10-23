@@ -11,4 +11,14 @@ const config = {
 
 const send = async (data) => {
   const transporter = nodemailer.createTransport(config);
+  transporter.sendMail(data, (err, info) => {
+    if (err) {
+      console.log(err);
+    }
+    return info.response;
+  });
+};
+
+module.exports = {
+  send,
 };
