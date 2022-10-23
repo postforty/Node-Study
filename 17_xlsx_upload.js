@@ -13,6 +13,7 @@ app.use(
   })
 );
 
+// multer, xlsx 엑셀 업로드 모듈
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "uploads"); // 전송된 파일이 저장되는 디렉토리
