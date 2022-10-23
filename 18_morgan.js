@@ -5,6 +5,8 @@ const morgan = require("morgan");
 const rfs = require("rotating-file-stream");
 const path = require("path");
 
+// log 기록 모듈
+
 // 월일시분으로 파일명 만드는 함수
 const generator = (time, index) => {
   if (!time) return "file.log";
@@ -42,4 +44,3 @@ app.get("/", (req, res) => {
 app.listen(3000, () => {
   console.log("서버가 포트 3000번으로 시작되었습니다.");
 });
-// 주석 수정
